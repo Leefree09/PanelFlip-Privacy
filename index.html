@@ -36,15 +36,17 @@
 
       <h2>Overview</h2>
       <p>PanelFlip is a comic and book reader. Your library data, reading progress, settings, and imported files are stored locally on your device.</p>
-      <p>PanelFlip does not collect personal information for the developer. It does not use advertising, analytics, tracking, or telemetry, and it does not require an account.</p>
+      <p>PanelFlip does not collect personal information for the developer. It does not use advertising, analytics, tracking, or telemetry, and it does not require a PanelFlip account.</p>
 
       <h2>Optional cover and metadata lookups</h2>
-      <p>When you intentionally perform a cover or metadata lookup, PanelFlip sends the search term you enter—for example, “Batman Year One”—to the comic metadata API you selected.</p>
-      <p>The selected third-party API returns cover images and publication or book metadata. That service may receive normal network information, such as your IP address, and is governed by its own privacy policy.</p>
-      <p>PanelFlip does not operate a server that receives or stores these lookup requests.</p>
+      <p>PanelFlip can look up metadata through the provider you select, currently Metron or Comic Vine. A manual search sends the title, issue, year, or similar comic metadata you search for - for example, "Batman Year One" - directly to that provider.</p>
+      <p>Automatic metadata lookup is off by default. If you turn it on in PanelFlip settings, newly imported comics can send filename-derived title, issue, year, or similar comic metadata to your selected provider. You can turn this setting off at any time.</p>
+      <p>The selected provider returns publication or book metadata and may provide cover-image URLs. PanelFlip may load those HTTPS cover images when showing search results. The provider may receive normal network information, such as your IP address, and is governed by its own privacy policy.</p>
+      <p>Metron and Comic Vine may require credentials that you provide to them. PanelFlip stores configured provider credentials locally on your device and sends them directly to the selected provider only to authenticate its requests.</p>
+      <p>PanelFlip does not operate a server that receives or stores these lookup requests. Metadata responses and lookup-cache entries are stored locally on your device.</p>
 
       <h2>Your data</h2>
-      <p>You can remove PanelFlip's local app data by clearing the app's data in your device settings or by uninstalling the app.</p>
+      <p>You can remove PanelFlip's local app data, including settings, provider credentials, lookup-cache entries, and reading data, by clearing the app's data in your device settings or by uninstalling the app. This does not delete comic or book files you own outside PanelFlip's private app storage.</p>
 
       <h2>Contact</h2>
       <p>Developer contact: <strong>Replace this placeholder with a developer contact email address.</strong></p>
