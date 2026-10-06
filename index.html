@@ -3,25 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Privacy policy for the PanelFlip comic and book reader.">
+    <meta name="description" content="Privacy policy for the PanelFlip Android comic and book reader.">
     <title>PanelFlip Privacy Policy</title>
     <style>
-      :root {
-        color-scheme: light dark;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.6;
-      }
-      body {
-        margin: 0;
-        background: Canvas;
-        color: CanvasText;
-      }
-      main {
-        box-sizing: border-box;
-        max-width: 48rem;
-        margin: 0 auto;
-        padding: 2.5rem 1.25rem 4rem;
-      }
+      :root { color-scheme: light dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+      body { margin: 0; background: Canvas; color: CanvasText; }
+      main { box-sizing: border-box; max-width: 48rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
       h1, h2 { line-height: 1.25; }
       h1 { margin: 0 0 .25rem; }
       h2 { margin-top: 2rem; }
@@ -35,21 +22,47 @@
       <p class="updated">Last updated: October 6, 2026</p>
 
       <h2>Overview</h2>
-      <p>PanelFlip is a comic and book reader. Your library data, reading progress, settings, and imported files are stored locally on your device.</p>
-      <p>PanelFlip does not collect personal information for the developer. It does not use advertising, analytics, tracking, or telemetry, and it does not require a PanelFlip account.</p>
+      <p>PanelFlip is a local-first comic and book reader for Android. It does not require a PanelFlip account. PanelFlip does not contain advertising, use analytics, behavioral tracking, advertising identifiers, or crash-reporting telemetry sent to the developer.</p>
+      <p>PanelFlip does not operate a backend server that receives users' libraries, reading activity, metadata searches, or provider credentials. It does not collect device identifiers such as an Android Advertising ID, IMEI, Android ID, MAC address, or SSID/BSSID. It also does not collect location, contacts, phone data, camera data, or microphone data. The app requests normal internet access only for features that need network communication.</p>
 
-      <h2>Optional cover and metadata lookups</h2>
-      <p>PanelFlip can look up metadata through the provider you select, currently Metron or Comic Vine. A manual search sends the title, issue, year, or similar comic metadata you search for - for example, "Batman Year One" - directly to that provider.</p>
-      <p>Automatic metadata lookup is off by default. If you turn it on in PanelFlip settings, newly imported comics can send filename-derived title, issue, year, or similar comic metadata to your selected provider. You can turn this setting off at any time.</p>
-      <p>The selected provider returns publication or book metadata and may provide cover-image URLs. PanelFlip may load those HTTPS cover images when showing search results. The provider may receive normal network information, such as your IP address, and is governed by its own privacy policy.</p>
-      <p>Metron and Comic Vine may require credentials that you provide to them. PanelFlip stores configured provider credentials locally on your device and sends them directly to the selected provider only to authenticate its requests.</p>
-      <p>PanelFlip does not operate a server that receives or stores these lookup requests. Metadata responses and lookup-cache entries are stored locally on your device.</p>
+      <h2>Information Stored on Your Device</h2>
+      <p>PanelFlip stores data locally on your device as needed to provide its features. This can include imported comic or book file references; file names and paths needed to find user-selected books; library records; reading progress; bookmarks; reader and application settings; comic metadata; locally generated indexes and search information; cached metadata-provider responses; cached cover images or thumbnails; panel or layout information; provider configuration; user-supplied provider credentials; and local diagnostic or application logs.</p>
+      <p>This local data is not transmitted to the PanelFlip developer. Provider credentials are stored locally using secure device storage where supported.</p>
 
-      <h2>Your data</h2>
-      <p>You can remove PanelFlip's local app data, including settings, provider credentials, lookup-cache entries, and reading data, by clearing the app's data in your device settings or by uninstalling the app. This does not delete comic or book files you own outside PanelFlip's private app storage.</p>
+      <h2>Your Comic and Book Files</h2>
+      <p>PanelFlip accesses comic and book files that you select through Android's file and folder selection mechanisms. PanelFlip does not upload your comic archives or books to the PanelFlip developer.</p>
+      <p>Clearing PanelFlip's application data or uninstalling PanelFlip removes PanelFlip's private application data. It does not delete comic or book files you own that are stored outside PanelFlip's private storage.</p>
+
+      <h2>Metadata and Cover Lookup</h2>
+      <p>PanelFlip offers optional third-party metadata lookup. You can perform a manual lookup. Automatic metadata lookup is off by default and occurs only after you explicitly enable it in PanelFlip settings.</p>
+      <p>When a lookup is used, PanelFlip may send the information needed to identify the requested publication to the provider you select. This may include a title, series name, issue number, publication year, provider-specific identifiers, or similar identifying metadata. Some of this information may be derived from a file name or embedded metadata in your comic or book file. PanelFlip does not upload the complete comic or book file for a metadata lookup.</p>
+      <p>A provider may return publication metadata and cover-image URLs. PanelFlip may download those HTTPS cover images and cache them locally to improve performance.</p>
+
+      <h2>Metron and Comic Vine</h2>
+      <p>The currently supported metadata providers are <a href="https://metron.cloud/" rel="external noopener noreferrer">Metron</a> and <a href="https://comicvine.gamespot.com/" rel="external noopener noreferrer">Comic Vine</a>. Requests are made directly from your device to the provider you select; the PanelFlip developer does not proxy them through a PanelFlip-operated server.</p>
+      <p>The selected provider may receive the lookup information described above, authentication information required for the request, and ordinary network information associated with an internet request, such as your IP address.</p>
+
+      <h2>Provider Credentials</h2>
+      <p>Metron may require account credentials, and Comic Vine may require an API key. These credentials are supplied by you, stored locally using secure storage where supported, and sent directly to the selected provider only when needed to authenticate that provider's request. They are not sent to or stored by the PanelFlip developer.</p>
+
+      <h2>Network and Security</h2>
+      <p>PanelFlip's supported provider API requests and remote cover downloads use encrypted HTTPS connections. Remote cover-image loading is restricted to HTTPS URLs. This statement does not guarantee the security practices of Metron, Comic Vine, your operating system, internet provider, or networks outside PanelFlip's control.</p>
+
+      <h2>Data Retention and Deletion</h2>
+      <p>PanelFlip does not maintain a developer-operated server-side user database. Local data remains on your device until it is removed from the library, relevant cached or application data is cleared, application data is reset, Android clears the app's storage, or you uninstall PanelFlip.</p>
+      <p>You can remove PanelFlip-held local data through available in-app controls where applicable, Android's Clear storage or Clear data function, or by uninstalling the app. User-owned comic and book files outside PanelFlip's private storage are not automatically deleted. Because PanelFlip has no cloud account system, there is no PanelFlip account-deletion request to make.</p>
+
+      <h2>Third-Party Privacy Practices</h2>
+      <p>Metron and Comic Vine are independent third-party services. Their collection, retention, security, and use of information are governed by their own privacy policies and terms. PanelFlip does not control those practices and cannot delete information that they independently retain.</p>
+
+      <h2>Children</h2>
+      <p>PanelFlip is a general-purpose comic and book reader and is not specifically directed to children.</p>
+
+      <h2>Changes to This Privacy Policy</h2>
+      <p>This policy may be updated when PanelFlip's functionality or data practices change. The Last updated date above will be revised when material changes are made.</p>
 
       <h2>Contact</h2>
-      <p>Developer contact: <strong>Replace this placeholder with a developer contact email address.</strong></p>
+      <p>Privacy contact: <strong>[PRIVACY CONTACT EMAIL REQUIRED]</strong></p>
     </main>
   </body>
 </html>
